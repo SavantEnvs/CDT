@@ -1,0 +1,9 @@
+project: savantenvs/CDT
+target: cdt_conform_edges
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/cdt_conform_edges/testsuite
+cmds:
+  - cmd: /mayhem/cdt_conform_edges
+    libfuzzer: true
+    timeout: 10
